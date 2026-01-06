@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+header{
+    background-color:black;
+    height:130px;
+}
+
+.header-left h1{
+    color:white;
+}
+
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 20px 30px;
+    
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    background-color:red;
+}
+
+.header-right a{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    height:600px;
+    background-color: rgba(28, 221, 176, 0.368);
+}
+
+.schedule{
+    text-align: center;
+    padding-top:100px;
+}
+
+.schedule h1{
+    font-size:50px;
+}
+
+.schedule h3{
+    font-size:35px;
+}
+
+footer{
+    height:100px;
+    background-color:rgba(117, 109, 108, 0.684)
+}
+
+.footer-left{
+    float:left;
+}
