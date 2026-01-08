@@ -1,3 +1,10 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
     margin: 0;
 }
@@ -7,8 +14,12 @@ h1, h2 {
 }
 
 header{
-    background-color:black;
-    height:130px;
+    background:#111;
+}
+
+.header-container{
+    max-width:1200px;
+    margin: 0 auto;
 }
 
 .header-left h1{
@@ -29,41 +40,62 @@ header{
     display: flex;
     align-items: center;
     height: 90px;
-    background-color:red;
-}
+    background-color: transparent;
 
+}
 .header-right a{
     display: flex;
     align-items: center;
     padding: 0 20px;
     height: 100%;
     color: white;
+    font-weight: bold;
     text-decoration: none;
 }
 
 main{
-    height:600px;
-    background-color: rgba(28, 221, 176, 0.368);
+   height: auto;
+  background-color: #f5f5f5;
+  padding: 0;
 }
 
 .schedule{
     text-align: center;
-    padding-top:100px;
+    max-width:900px;
+    margin: 0 auto;
+    padding: 120px 20px;
+    background-color: white;
 }
 
-.schedule h1{
-    font-size:50px;
+.schedule h2{
+    font-size:2rem;
 }
 
 .schedule h3{
-    font-size:35px;
+    font-size:3rem;
 }
 
-footer{
-    height:100px;
-    background-color:rgba(117, 109, 108, 0.684)
+footer {
+  background-color: rgba(117, 109, 108, 0.684);
+  padding: 40px 20px;
 }
 
-.footer-left{
-    float:left;
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-left {
+  padding: 16px;
+  text-align: left; /* 中央寄せにしたければ 'center' に変えるだけ */
+  flex: 1;
+}
+
+.footer-right {
+  padding: 16px;
+  flex: 0 0 auto;
 }
