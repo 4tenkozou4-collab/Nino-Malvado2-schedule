@@ -51,6 +51,12 @@ header{
     color: white;
     font-weight: bold;
     text-decoration: none;
+    background-color:rgba(64, 58, 58, 0.484);
+    font-size: 1.4rem;
+}
+
+.header-right a:hover{
+  background-color:rgb(64, 58, 58);
 }
 
 main{
@@ -65,14 +71,16 @@ main{
     margin: 0 auto;
     padding: 120px 20px;
     background-color: white;
+    
 }
 
 .schedule h2{
     font-size:2rem;
 }
 
-.schedule h3{
+.schedule p{
     font-size:3rem;
+    font-family:  'Bebas Neue', sans-serif;
 }
 
 footer {
@@ -90,9 +98,13 @@ footer {
 }
 
 .footer-left {
-  padding: 16px;
+  padding: 10px;
   text-align: left; /* 中央寄せにしたければ 'center' に変えるだけ */
   flex: 1;
+}
+
+.footer-left h3{
+    font-size:2.3rem;
 }
 
 .footer-right {
